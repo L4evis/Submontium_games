@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Submontium Games — Studio</title>
+  <meta name="description" content="Submontium Games — independent studio crafting a narrative driving RPG set under the mountains." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Submontium Games" />
+  <meta property="og:description" content="Independent studio crafting a narrative driving RPG set under the mountains." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-studio.png" />
+
+  <!-- Schema.org Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Submontium Games",
+    "url": "https://submontium.games",
+    "logo": "https://submontium.games/assets/logo.png",
+    "sameAs": [
+      "https://submontium.com"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Submontium Games logo" class="logo" />
+      <div>
+        <h1>Submontium <span>Games</span></h1>
+        <p class="tag">Independent game studio</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h2>We make weatherbound worlds with memory.</h2>
+        <p>Our debut title <strong>Submontium</strong> is a narrative driving RPG set in the 1930s—realistic, poetic, and unforgiving.</p>
+        <p><a href="https://submontium.com" class="btn">Visit the game site</a></p>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h3>Projects</h3>
+      <article class="card">
+        <h4>Submontium</h4>
+        <p>A narrative driving RPG under the mountains. Single‑player. PC. Unreal Engine 5.</p>
+        <ul class="meta">
+          <li>Genre: Narrative / Driving / RPG</li>
+          <li>Platform: PC</li>
+          <li>Status: In development</li>
+        </ul>
+        <a href="https://submontium.com" class="btn ghost">Learn more</a>
+      </article>
+    </section>
+
+    <section id="about" class="wrap">
+      <h3>About</h3>
+      <p>Submontium Games is a small studio focused on handcrafted visuals and original systems. We build with Unreal Engine 5, Blender, and Mari.</p>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h3>Contact</h3>
+      <p>Press & business: <a href="mailto:hello@submontiumgames.com">hello@submontiumgames.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="year"></span> Submontium Games.</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
