@@ -1,89 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Submontium Games — Studio</title>
-  <meta name="description" content="Submontium Games — independent studio crafting a narrative driving RPG set under the mountains." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Submontium Games" />
-  <meta property="og:description" content="Independent studio crafting a narrative driving RPG set under the mountains." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-studio.png" />
-
-  <!-- Schema.org Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Submontium Games",
-    "url": "https://submontium.games",
-    "logo": "https://submontium.games/assets/logo.png",
-    "sameAs": [
-      "https://submontium.com"
-    ]
-  }
-  </script>
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Submontium Games — Weatherbound worlds with memory</title>
+  <meta name="description" content="Submontium Games is a small studio crafting weatherbound survival RPGs. Our debut, Submontium, is set in the 1930s—from Mariánské Lázně to Antarctica." />
+  <link rel="preload" href="/media/airship_wip.jpg" as="image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="wrap">
-    <div class="brand">
-      <img src="assets/logo.svg" alt="Submontium Games logo" class="logo" />
-      <div>
-        <h1>Submontium <span>Games</span></h1>
-        <p class="tag">Independent game studio</p>
-      </div>
+
+<header>
+  <div class="wrap brand" role="navigation" aria-label="Primary">
+    <img class="logo" src="./assets/logo.svg" alt="Submontium Games logo" width="44" height="44" />
+    <div>
+      <h1>Submontium Games <span>— weatherbound worlds</span></h1>
+      <div class="tag">Handcrafted visuals • Original systems • Czech Republic</div>
     </div>
-    <nav>
+    <nav style="margin-left:auto;display:flex;gap:12px">
       <a href="#projects">Projects</a>
+      <a href="#vision">Vision</a>
       <a href="#about">About</a>
-      <a href="#contact" class="btn">Contact</a>
+      <a href="#press">Press</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <h2>We make weatherbound worlds with memory.</h2>
-        <p>Our debut title <strong>Submontium</strong> is a narrative driving RPG set in the 1930s—realistic, poetic, and unforgiving.</p>
-        <p><a href="https://submontium.com" class="btn">Visit the game site</a></p>
-      </div>
-    </section>
-
-    <section id="projects" class="wrap">
-      <h3>Projects</h3>
-      <article class="card">
-        <h4>Submontium</h4>
-        <p>A narrative driving RPG under the mountains. Single‑player. PC. Unreal Engine 5.</p>
-        <ul class="meta">
-          <li>Genre: Narrative / Driving / RPG</li>
-          <li>Platform: PC</li>
-          <li>Status: In development</li>
-        </ul>
-        <a href="https://submontium.com" class="btn ghost">Learn more</a>
-      </article>
-    </section>
-
-    <section id="about" class="wrap">
-      <h3>About</h3>
-      <p>Submontium Games is a small studio focused on handcrafted visuals and original systems. We build with Unreal Engine 5, Blender, and Mari.</p>
-    </section>
-
-    <section id="contact" class="wrap">
-      <h3>Contact</h3>
-      <p>Press & business: <a href="mailto:hello@gearblood.com">hello@gearblood.com</a></p>
-    </section>
-  </main>
-
-  <footer>
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
     <div class="wrap">
-      <p>© <span id="year"></span> Submontium Games.</p>
+      <h2>We make <span style="color:var(--accent)">weatherbound</span> worlds with memory.</h2>
+      <p class="lede">Our debut title <strong>Submontium</strong> is a weatherbound survival RPG set in the 1930s—realistic, poetic, and unforgiving. Science replaces weapons. Your judgement of the weather decides who survives.</p>
+      <div style="display:flex;gap:12px;margin-top:14px">
+        <a class="btn" href="https://submontium.com" rel="noopener">Visit the game site</a>
+        <a class="btn ghost" href="#press">Media kit</a>
+      </div>
     </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="projects" style="display:grid;grid-template-columns:1fr;gap:16px">
+        <article class="card project-card" aria-labelledby="p-submontium">
+          <header>
+            <h3 id="p-submontium" style="margin:0 0 6px">Submontium</h3>
+            <p class="lede" style="margin:0">A narrative survival RPG about an expedition from Mariánské Lázně to Antarctica. Single‑player. PC. Unreal Engine 5.6.</p>
+          </header>
+          <div class="meta">
+            <span class="tag">Genre: Survival RPG / Narrative</span>
+            <span class="tag">Engine: Unreal Engine 5.6.1</span>
+            <span class="tag">Platform: PC (Steam)</span>
+            <span class="tag">Status: In development</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section id="vision">
+    <div class="wrap">
+      <h2>Vision</h2>
+      <article class="card">
+        <ul class="meta" style="display:block;list-style:none;margin:0;padding:0">
+          <li style="margin:.6rem 0"><strong>Weatherbound design.</strong> Climate and terrain are not background—they are the main system. Forecast, plan, survive.</li>
+          <li style="margin:.6rem 0"><strong>Science over violence.</strong> Your toolkit is barometers, sextants, drills and labs—not guns.</li>
+          <li style="margin:.6rem 0"><strong>1930s Art Deco.</strong> A grounded, handcrafted aesthetic with modern fidelity.</li>
+          <li style="margin:.6rem 0"><strong>Expedition dramaturgy.</strong> From Mariánské Lázně to Patagonia—choose airship or ship—then race the unseen clock to the South Pole.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <article class="card">
+        <p><strong>Submontium Games</strong> is a small studio focused on handcrafted visuals and original systems. We build with <em>Unreal Engine 5</em>, <em>Blender 4.4+</em>, and <em>Mari 7.1+</em>. The studio is based in the Czech Republic and led by Zdeněk Levý.</p>
+        <p>We create narrative survival games where memory, weather and science shape the player’s journey. Our current project, <em>Submontium</em>, begins at the Mariánské Lázně colonnade and culminates on the Antarctic plateau.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Press -->
+  <section id="press">
+    <div class="wrap">
+      <h2>Press / Media</h2>
+      <article class="card">
+        <p>Download the one‑page factsheet (PDF) and a small set of WIP images.</p>
+        <ul>
+          <li><a href="/press/Submontium_Games_Factsheet.pdf">Factsheet (PDF)</a></li>
+          <li><a href="/press/Submontium_Media_Kit.zip">Media kit (ZIP)</a></li>
+        </ul>
+        <div class="media-grid" aria-label="WIP images" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px">
+          <img src="/media/airship_wip.jpg" alt="Art‑Deco airship render" loading="lazy">
+          <img src="/media/colonnade_wip.jpg" alt="Mariánské Lázně colonnade render" loading="lazy">
+          <img src="/media/antarctic_plateau.jpg" alt="Antarctic plateau environment" loading="lazy">
+          <img src="/media/lab_wip.jpg" alt="Field laboratory props" loading="lazy">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <article class="card">
+        <p><strong>Press:</strong> <a href="mailto:press@submontium.games">press@submontium.games</a><br>
+           <strong>Business:</strong> <a href="mailto:hello@submontium.games">hello@submontium.games</a></p>
+        <p>For publisher inquiries (builds, deck, schedule), please reach out via <a href="mailto:hello@submontium.games">hello@submontium.games</a>.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <small>© 2025 Submontium Games. All rights reserved.</small>
+  </div>
+</footer>
+
 </body>
 </html>
